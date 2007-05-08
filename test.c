@@ -1,6 +1,7 @@
 #include <libtest.h>
 
-void main()
+int main()
 {
     test_sleep(2);
+    return 0;
 }
