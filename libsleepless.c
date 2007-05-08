@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #define __USE_GNU
 #include <dlfcn.h>
-#include <time.h>
 
 unsigned int sleep(unsigned int seconds)
 {
