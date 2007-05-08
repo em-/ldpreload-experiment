@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #define __USE_GNU
 #include <dlfcn.h>
+#include <time.h>
 
 /* Example taken from Gilad Ben-Yossef http://benyossef.com/ */
 

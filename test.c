@@ -1,6 +1,6 @@
-#include <unistd.h>
+#include <libtest.h>
 
 void main()
 {
-    sleep(2);
+    test_sleep(2);
 }
