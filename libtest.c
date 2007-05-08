@@ -1,8 +1,13 @@
 #include <unistd.h>
 #include <stdio.h>
 
-unsigned int test_sleep(unsigned int seconds)
+void print_sleep()
 {
     printf("test sleeping\n");
+}
+
+unsigned int test_sleep(unsigned int seconds)
+{
+    print_sleep();
     return sleep(seconds);
 }
