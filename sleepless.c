@@ -6,10 +6,6 @@
 
 /* Example taken from Gilad Ben-Yossef http://benyossef.com/ */
 
-/* Compile with 
- * gcc sleepless.c -o sleepless.so -ldl -shared
- */
-
 unsigned int sleep(unsigned int seconds)
 {
     unsigned int (*origsleep)(unsigned int);
