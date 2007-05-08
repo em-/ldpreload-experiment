@@ -1,9 +1,9 @@
 all: run
 
-sleepless.so:
+sleepless.so: sleepless.c
 	gcc sleepless.c -o sleepless.so -ldl -shared
 
-test:
+test: test.c
 	gcc test.c -o test
 
 run: sleepless.so test
