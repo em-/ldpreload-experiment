@@ -1,0 +1,22 @@
+SleepLess
+=========
+This is a simple demonstration of how LD_PRELOAD works.
+
+test.c calls the test_sleep() function in libtest.c which, in turn,
+calls the print_sleep() function in the same library and the sleep()
+function from the C library.
+
+libsleepless.c shows how to intercept the calls done in the library, 
+invoking then the original function or doing nothing.
+
+Just run 'make' to see how it works.
+
+
+The code is based on the presentation given by Gilad Ben-Yossef and
+available at http://benyossef.com/, and is released to the public
+domain so you are free to do whatever you want with it.
+
+The latest revision is available at http://techn.ocracy.org/sleepless
+
+-- 
+Emanuele Aina <em@nerd.ocracy.org>
