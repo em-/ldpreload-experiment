@@ -10,5 +10,5 @@ test: libtest.h test.c
 	gcc test.c -I. ./libtest.so -o test
 
 run: sleepless.so libtest.so test
-	LD_LIBRARY_PATH=. time ./test
-	LD_LIBRARY_PATH=. LD_PRELOAD=./sleepless.so time ./test
+	LD_LIBRARY_PATH=. ./test
+	LD_LIBRARY_PATH=. LD_PRELOAD=./sleepless.so ./test

@@ -23,5 +23,5 @@ unsigned int sleep(unsigned int seconds)
     }
 
     printf("sleep less, do more\n");
-    return origsleep(seconds/2);
+    return origsleep(seconds);
 }
